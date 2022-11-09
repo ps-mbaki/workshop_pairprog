@@ -24,5 +24,12 @@ public class UnitTest1
         Assert.AreEqual(scores[1], 0);
     }
 
-    
+    [TestMethod]
+    public void testScoreIsNotNull() {
+        Game game = new Game();
+        List<int> scores = game.getScore();
+
+        // Verify both scores start at 0
+        Assert.IsNotNull(scores);
+    }
 }

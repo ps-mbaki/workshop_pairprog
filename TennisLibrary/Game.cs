@@ -14,7 +14,7 @@ public class Game
     }
 
     public List<int> getScore() {
-        return null;
+        return scores;
     }
     
 
